@@ -1,13 +1,43 @@
 <style>
     .active-link {
     color: #fb9678 !important;
-}
+    }
 
-.active-link i {
-    color: #fb9678 !important;
-}
+    .active-link i {
+        color: #fb9678 !important;
+    }
+
+    .left-sidebar {
+        width: 250px;
+        transition: width 0.3s ease;
+        overflow: hidden;
+    }
+
+    .left-sidebar.collapsed {
+        width: 70px;
+    }
+
+    .left-sidebar.collapsed .hide-menu {
+        display: none;
+    }
+
+    .left-sidebar.collapsed .user-profile {
+        display: none;
+    }
+
+    .left-sidebar.collapsed i {
+        text-align: center;
+        width: 100%;
+    }
+
+    .left-sidebar.collapsed .hide-menu {
+        display: none;
+    }
 
 </style>
+<button id="toggleSidebar" style="background: none; border: none; color: white; font-size: 24px; margin: 10px;">
+    <i class="fas fa-bars"></i>
+</button>
 <aside class="left-sidebar" style="background-color: #2b2b2b;">
     <div class="scroll-sidebar">
         <!-- User Profile -->
@@ -52,7 +82,7 @@
                 <li class="nav-small-cap">--- EVENTS</li>
                 <li>
                     <a class="has-arrow waves-effect waves-dark {{ request()->is('manager/events*') ? 'active-link' : '' }}" href="{{ url('manager/events') }}">
-                        <i class="icon-people"></i><span class="hide-menu">Registration</span>
+                        <i class="icon-people"></i><span class="hide-menu">Registratio</span>
                     </a>
                     <ul class="collapse">
                         <li><a href="{{ route('manager.events.index') }}">Event List</a></li>

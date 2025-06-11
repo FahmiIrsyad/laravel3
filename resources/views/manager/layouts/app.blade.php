@@ -19,6 +19,10 @@
 <body>
 
     <div class="d-flex">
+
+        <button id="toggleSidebar" style="background: none; border: none; color: black; font-size: 24px; margin: 10px; position: absolute; z-index: 1000;">
+            <i class="fas fa-bars"></i>
+        </button>
         <!-- Sidebar (Fixed Width) -->
         <aside class="sidebar">
             @include('manager.partials.sidebar')
@@ -32,5 +36,25 @@
 
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('toggleSidebar').addEventListener('click', function () {
+            const sidebar = document.querySelector('.left-sidebar');
+            const hideMenus = document.querySelectorAll('.left-sidebar .hide-menu');
+            const main = document.querySelector('main');
+
+            sidebar.classList.toggle('collapsed');
+
+            if (sidebar.classList.contains('collapsed')) {
+                main.style.marginLeft = '70px';
+                hideMenus.forEach(el => el.style.display = 'none');
+            } else {
+                main.style.marginLeft = '250px';
+                hideMenus.forEach(el => el.style.display = '');
+            }
+        });
+    </script>
+
+
+
 </body>
 </html>
