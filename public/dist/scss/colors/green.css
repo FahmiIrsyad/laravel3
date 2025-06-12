@@ -1,0 +1,15 @@
+.skin-green {
+  /*Theme Colors*/ }
+  .skin-green .topbar {
+    background: #00c292; }
+  .skin-green .sidebar-nav ul li a.active, .skin-green .sidebar-nav ul li a:hover {
+    color: #00c292; }
+    .skin-green .sidebar-nav ul li a.active i, .skin-green .sidebar-nav ul li a:hover i {
+      color: #00c292; }
+  .skin-green .sidebar-nav > ul > li.active > a {
+    color: #00c292;
+    border-left: 3px solid #00c292; }
+    .skin-green .sidebar-nav > ul > li.active > a i {
+      color: #00c292; }
+  .skin-green .page-titles .breadcrumb .breadcrumb-item.active {
+    color: #00c292; }

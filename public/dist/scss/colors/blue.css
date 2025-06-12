@@ -1,0 +1,15 @@
+.skin-blue {
+  /*Theme Colors*/ }
+  .skin-blue .topbar {
+    background: #03a9f3; }
+  .skin-blue .sidebar-nav ul li a.active, .skin-blue .sidebar-nav ul li a:hover {
+    color: #03a9f3; }
+    .skin-blue .sidebar-nav ul li a.active i, .skin-blue .sidebar-nav ul li a:hover i {
+      color: #03a9f3; }
+  .skin-blue .sidebar-nav > ul > li.active > a {
+    color: #03a9f3;
+    border-left: 3px solid #03a9f3; }
+    .skin-blue .sidebar-nav > ul > li.active > a i {
+      color: #03a9f3; }
+  .skin-blue .page-titles .breadcrumb .breadcrumb-item.active {
+    color: #03a9f3; }

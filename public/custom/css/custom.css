@@ -1,0 +1,61 @@
+.paginate_input{
+	width:40px;
+	text-align: center;
+}
+
+.pagination-right {
+    display: flex;
+    justify-content: flex-end;
+}
+.red {
+    color: red;
+}
+.file-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+}
+.mce-modal {
+    z-index: 2050 !important;  /* Ensure this is higher than BootstrapDialog's z-index */
+}
+.remove-badge {
+    background-color: red;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin-left: 8px;
+}
+#uploadifive-admin_user_pix {
+    width: 200px !important;
+    text-align: center !important;
+    height: auto !important;
+    line-height: 18px !important;
+}
+#waitingLayer {
+    display: none; /* Initially hidden */
+    position: fixed; /* Stay in the same place */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the layer */
+    z-index: 9999; /* Ensure it's on top */
+}
+
+#waiting_layer_image {
+    animation: spin 2s linear infinite; /* Apply the spin animation */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.tilted-photo {
+  border: 10px solid white;            /* white photo border */
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.3); /* subtle drop shadow */
+  transform: rotate(-5deg);            /* tilted effect */
+  display: inline-block;
+  transition: transform 0.3s ease;
+}

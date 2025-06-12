@@ -1,0 +1,110 @@
+[11-Jun-2025 17:37:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tag() in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js:1388
+Stack trace:
+#0 C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.php(18): include()
+#1 {main}
+  thrown in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js on line 1388
+[11-Jun-2025 17:39:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tag() in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js:1388
+Stack trace:
+#0 C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.php(18): include()
+#1 {main}
+  thrown in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js on line 1388
+[11-Jun-2025 17:40:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tag() in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js:1388
+Stack trace:
+#0 C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.php(18): include()
+#1 {main}
+  thrown in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js on line 1388
+[11-Jun-2025 17:41:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tag() in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js:1388
+Stack trace:
+#0 C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.php(18): include()
+#1 {main}
+  thrown in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js on line 1388
+[11-Jun-2025 17:45:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tag() in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js:1388
+Stack trace:
+#0 C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.php(18): include()
+#1 {main}
+  thrown in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js on line 1388
+[11-Jun-2025 17:46:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tag() in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js:1388
+Stack trace:
+#0 C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.php(18): include()
+#1 {main}
+  thrown in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js on line 1388
+[11-Jun-2025 17:46:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tag() in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js:1388
+Stack trace:
+#0 C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.php(18): include()
+#1 {main}
+  thrown in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js on line 1388
+[11-Jun-2025 17:47:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tag() in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js:1388
+Stack trace:
+#0 C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.php(18): include()
+#1 {main}
+  thrown in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js on line 1388
+[11-Jun-2025 17:47:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tag() in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js:1388
+Stack trace:
+#0 C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.php(18): include()
+#1 {main}
+  thrown in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js on line 1388
+[11-Jun-2025 17:47:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tag() in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js:1388
+Stack trace:
+#0 C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.php(18): include()
+#1 {main}
+  thrown in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js on line 1388
+[11-Jun-2025 17:48:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tag() in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js:1388
+Stack trace:
+#0 C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.php(18): include()
+#1 {main}
+  thrown in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js on line 1388
+[11-Jun-2025 17:48:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tag() in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js:1388
+Stack trace:
+#0 C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.php(18): include()
+#1 {main}
+  thrown in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js on line 1388
+[12-Jun-2025 02:53:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tag() in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js:1388
+Stack trace:
+#0 C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.php(18): include()
+#1 {main}
+  thrown in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js on line 1388
+[12-Jun-2025 03:13:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tag() in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js:1388
+Stack trace:
+#0 C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.php(18): include()
+#1 {main}
+  thrown in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js on line 1388
+[12-Jun-2025 03:19:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tag() in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js:1388
+Stack trace:
+#0 C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.php(18): include()
+#1 {main}
+  thrown in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js on line 1388
+[12-Jun-2025 03:19:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tag() in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js:1388
+Stack trace:
+#0 C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.php(18): include()
+#1 {main}
+  thrown in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js on line 1388
+[12-Jun-2025 03:20:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tag() in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js:1388
+Stack trace:
+#0 C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.php(18): include()
+#1 {main}
+  thrown in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js on line 1388
+[12-Jun-2025 03:20:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tag() in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js:1388
+Stack trace:
+#0 C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.php(18): include()
+#1 {main}
+  thrown in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js on line 1388
+[12-Jun-2025 03:21:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tag() in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js:1388
+Stack trace:
+#0 C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.php(18): include()
+#1 {main}
+  thrown in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js on line 1388
+[12-Jun-2025 03:23:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tag() in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js:1388
+Stack trace:
+#0 C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.php(18): include()
+#1 {main}
+  thrown in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js on line 1388
+[12-Jun-2025 03:26:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tag() in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js:1388
+Stack trace:
+#0 C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.php(18): include()
+#1 {main}
+  thrown in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js on line 1388
+[12-Jun-2025 03:29:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tag() in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js:1388
+Stack trace:
+#0 C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.php(18): include()
+#1 {main}
+  thrown in C:\wamp64\www\laravel2\public_html\laravel2\public\custom\js\custom_admin.js on line 1388

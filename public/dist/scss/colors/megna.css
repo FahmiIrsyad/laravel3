@@ -1,0 +1,15 @@
+.skin-megna {
+  /*Theme Colors*/ }
+  .skin-megna .topbar {
+    background: #01c0c8; }
+  .skin-megna .sidebar-nav ul li a.active, .skin-megna .sidebar-nav ul li a:hover {
+    color: #01c0c8; }
+    .skin-megna .sidebar-nav ul li a.active i, .skin-megna .sidebar-nav ul li a:hover i {
+      color: #01c0c8; }
+  .skin-megna .sidebar-nav > ul > li.active > a {
+    color: #01c0c8;
+    border-left: 3px solid #01c0c8; }
+    .skin-megna .sidebar-nav > ul > li.active > a i {
+      color: #01c0c8; }
+  .skin-megna .page-titles .breadcrumb .breadcrumb-item.active {
+    color: #01c0c8; }
