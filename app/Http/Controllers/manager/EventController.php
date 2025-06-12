@@ -6,12 +6,43 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Event;
 use App\Models\EventForm;
+use Yajra\DataTables\Facades\DataTables;
 
 class EventController extends Controller {
     public function index() {
         $events = Event::all();
         return view('events.index', compact('events'));
     }
+
+    public function listEvent()
+    {
+        $events = Event::orderBy('created_at', 'DESC')->get();
+
+        $eventCollection = collect($events)->map(function ($event) {
+            return [
+                'id' => $event->id,
+                'title' => $event->title,
+                'location' => $event->location,
+                'status' => $event->status ? 'Active' : 'Inactive',
+                'created_at' => $event->created_at->format('Y/m/d'),
+            ];
+        });
+
+        return DataTables::of($eventCollection)
+            ->escapeColumns([]) // allow HTML and Blade code
+            ->addIndexColumn()
+            ->addColumn('action', '
+                <a href="{{ route(\'manager.events.edit\', $id) }}" class="btn btn-warning btn-sm">Edit</a>
+                <form method="POST" action="{{ route(\'manager.events.destroy\', $id) }}" style="display:inline-block" onsubmit="return confirm(\'Are you sure?\')">
+                    ' . csrf_field() . method_field('DELETE') . '
+                    <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                </form>
+                <a href="{{ route(\'manager.event.form.builder\', $id) }}" class="btn btn-info btn-sm">Build Form</a>
+                <a href="{{ route(\'manager.form.show\', $id) }}" class="btn btn-primary btn-sm" target="_blank">View Form</a>
+            ')
+            ->make(true);
+    }
+
 
     public function create() {
         return view('events.create');

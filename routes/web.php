@@ -38,7 +38,10 @@ Route::prefix('manager')->group(function () {
 
     Route::middleware('auth')->group(function () {
         // Events CRUD
-        Route::resource('events', EventController::class)->names('manager.events');
+        Route::resource('events', EventController::class)->except(['show'])->names('manager.events');
+
+        Route::get('/events/list', [EventController::class, 'listEvent'])->name('manager.events.list');
+
 
         // Custom form builder
         Route::get('/events/{event}/form-builder', [EventFormController::class, 'create'])->name('manager.event.form.builder');
