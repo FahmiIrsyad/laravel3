@@ -96,7 +96,7 @@
     let table = $('#eventTable').DataTable({
         processing: true,
         serverSide: true,
-        responsive: true
+        responsive: true,
         ajax: {
             url: "{{ route('manager.events.list') }}",
             data: function (d) {
