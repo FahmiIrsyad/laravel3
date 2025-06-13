@@ -43,6 +43,13 @@ class EventController extends Controller {
             ->make(true);
     }
 
+    public function show($id)
+    {
+        $event = Event::findOrFail($id);
+        return view('events.show', compact('event'));
+    }
+
+
 
     public function create() {
         return view('events.create');

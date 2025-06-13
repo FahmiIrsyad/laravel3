@@ -5,11 +5,25 @@ use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\manager\EventController;
 use App\Http\Controllers\manager\EventFormController;
 use Illuminate\Support\Facades\Route;
+use App\Models\Event;
 use Illuminate\Support\Facades\Artisan;
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/sports/running', function () {
+    $events = Event::all();
+    return view('running', compact('events'));
+});
+
+Route::get('/event/{id}', [EventController::class, 'show'])->name('event.show');
+
+Route::view('/sports/football', 'sports.football');
+Route::view('/sports/hockey', 'sports.hockey');
+Route::view('/sports/rugby', 'sports.rugby');
+Route::view('/sports/netball', 'sports.netball');
+Route::view('/sports/all', 'sports.all');
 
 Route::get('/link-storage', function () {
     Artisan::call('storage:link');

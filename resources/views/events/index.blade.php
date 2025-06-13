@@ -93,30 +93,38 @@
         </div>
         <script>
     $(document).ready(function () {
-        let table = $('#eventTable').DataTable({
-            processing: true,
-            serverSide: true,
-            ajax: {
-                url: "{{ route('manager.events.list') }}", // Adjust route name if needed
-                data: function (d) {
-                    d.status = $('#filterStatus').val();
-                    d.date = $('#filterDate').val();
-                }
-            },
-            columns: [
-                { data: 'DT_RowIndex', name: 'DT_RowIndex' },
-                { data: 'title', name: 'title' },
-                { data: 'created_at', name: 'created_at' },
-                { data: 'location', name: 'location' },
-                { data: 'status', name: 'status' },
-                { data: 'action', name: 'action', orderable: false, searchable: false }
-            ]
-        });
-
-        $('#filterStatus, #filterDate').on('change', function () {
-            table.ajax.reload();
-        });
+    let table = $('#eventTable').DataTable({
+        processing: true,
+        serverSide: true,
+        responsive: true
+        ajax: {
+            url: "{{ route('manager.events.list') }}",
+            data: function (d) {
+                d.status = $('#filterStatus').val();
+                d.date = $('#filterDate').val();
+            }
+        },
+        columns: [
+            { data: 'DT_RowIndex', name: 'DT_RowIndex' },
+            { data: 'title', name: 'title' },
+            { data: 'created_at', name: 'created_at' },
+            { data: 'location', name: 'location' },
+            { data: 'status', name: 'status' },
+            { data: 'action', name: 'action', orderable: false, searchable: false }
+        ],
+        dom:
+            "<'d-flex justify-content-between mb-3'<''l><' text-center'B><''f>>" +
+            "<'row'<'col-12'tr>>" +
+            "<'d-flex justify-content-between mt-3'<''i><' text-end'p>>",
+        buttons: ['copy', 'csv', 'excel', 'pdf', 'print'],
     });
+
+    $('#filterStatus, #filterDate').on('change', function () {
+        table.ajax.reload();
+    });
+});
+
+
 </script>
 
 @endsection
