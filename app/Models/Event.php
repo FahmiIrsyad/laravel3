@@ -9,4 +9,23 @@ class Event extends Model {
     public function form() {
         return $this->hasOne(EventForm::class);
     }
+
+    public function event_statements()
+    {
+        return $this->hasMany(EventStatement::class);
+    }
+
+    public function eventFee()
+    {
+        return $this->hasOne(EventFee::class);
+    }
+
+    public function formFields()
+{
+    return $this->hasMany(EventFormField::class);
+}
+
+
+
+
 }

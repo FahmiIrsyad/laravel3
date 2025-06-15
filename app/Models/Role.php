@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+
+class Role extends Model
+{
+    protected $fillable = ['name'];
+
+    // For many-to-many
+    public function users(): BelongsToMany
+    {
+        return $this->belongsToMany(User::class, 'role_user');
+        // or Team::class if you're using the Team model
+    }
+}
+

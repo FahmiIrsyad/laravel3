@@ -5,22 +5,50 @@ namespace App\Http\Controllers\manager;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Event;
-use App\Models\EventForm;
+use App\Models\EventFormField;
+use App\Models\EventFormFieldOption;
+use App\Models\EventForm;      
 
 class EventFormController extends Controller {
     public function create(Event $event) {
         return view('events.form_builder', compact('event'));
     }
 
-    public function store(Request $request, Event $event) {
-        $request->validate(['form_json' => 'required|json']);
+    public function store(Request $request, Event $event)
+    {
+        $request->validate([
+            'form_json' => 'required|json',
+        ]);
 
-        EventForm::updateOrCreate(
-            ['event_id' => $event->id],
-            ['form_json' => $request->form_json]
-        );
+        $fields = json_decode($request->form_json, true);
 
-        return redirect()->route('manager.events.index')->with('success', 'Form saved');
+        // Clean existing
+        EventFormField::where('event_id', $event->id)->delete();
+
+        foreach ($fields as $order => $field) {
+            $fieldModel = EventFormField::create([
+                'event_id'   => $event->id,
+                'label'      => $field['label'],
+                'input_id'   => 'field_' . uniqid(),
+                'type'       => $field['type'],
+                'required'   => $field['required'] ?? false,
+                'order'      => $order,
+            ]);
+
+            if (isset($field['options']) && is_array($field['options'])) {
+                foreach ($field['options'] as $index => $option) {
+                    EventFormFieldOption::create([
+                        'event_form_field_id' => $fieldModel->id,
+                        'name'  => $fieldModel->input_id,
+                        'value' => $option,
+                        'label' => $option,
+                        'order' => $index,
+                    ]);
+                }
+            }
+        }
+
+        return redirect()->route('manager.events.index')->with('success', 'Form saved.');
     }
 
     public function showForm(Event $event)

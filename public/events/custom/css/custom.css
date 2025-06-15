@@ -1,0 +1,325 @@
+
+body.login{
+	background-image: url(../img/doodles.png);
+}
+body {
+	font-weight: normal !important;
+}
+h1 {
+	font-size: 2rem !important;
+	font-weight: 900 !important;
+}
+h2 {
+	font-size: 1.7rem !important;
+}
+h3 {
+	font-size: 1.5rem !important;
+	line-height: 2.5rem !important;
+}
+h4 {
+	font-size: 1.3rem !important;
+}
+h5 {
+	font-size: 1rem !important;
+}
+h6 {
+	font-size: 0.9rem !important;
+}
+.page_menu {
+	background: #efefef;
+	padding: 4px;
+}
+.button, input[type='button'] {
+	display: inline-block;
+
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	user-select: none;
+	border: 1px solid transparent;
+	background: #258;
+	color: gold;
+	margin:0 2px;
+	padding: 0.375rem 0.75rem;
+	font-size: 0.875rem;
+	line-height: 1.5;
+	border-radius: 0.25rem;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+thead th {
+	background-color: #258;
+	border: 1px solid #258;
+	font-size: .9rem;
+	padding: 4px;
+	color:gold;
+}
+@media (min-width: 992px) {
+  .modal-lg {
+    width: 1000px;
+  }
+  .modal-full {
+  		margin-right:auto;
+		margin-left:auto;
+        width: 92.5% !important;
+        height: 92.5% !important;
+        min-height: 92.5%;
+        padding: 0;
+	  max-width: 1200px;
+  }
+}
+.modal-dialog .modal-full {
+  		margin-right:auto;
+		margin-left:auto;
+        width: 92.5% !important;
+        height: 92.5% !important;
+        min-height: 92.5%;
+        padding: 0;
+		max-width: 1200px;
+}
+th {
+  background: #ccc;
+  text-align: inherit;
+	font-size:0.8rem;
+}
+.field {
+	background: #ececec;
+	width:15%;
+	font-weight: bold;
+}
+.width-auto {
+	width:auto;
+}
+label.error {
+	background: #20a8d8;
+	padding:4px 6px;
+	left: -28000px;
+	top: -28000px;
+	display: none;
+	color: white;
+	max-width: 100%;
+	min-width: 50px;
+
+	font-size: .8rem;
+	line-height: 12px;
+
+	direction: ltr;
+
+	box-shadow: none;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	overflow: hidden;
+	z-index: 10;
+}
+.modal-body {
+	overflow-y: scroll;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Be Vietnam Pro", 'Russo One','Orbitron','Passion One','Montserrat','Fjalla One', 'Yanone Kaffeesatz', sans-serif !important;
+
+}
+tbody, thead th, body, .btn, input[type=button], input[type=submit] {
+	font-size:.8rem !important;
+}
+.form-control {
+	line-height: 1rem !important;
+	font-size:0.75rem !important;
+}
+.input-group-text {
+	font-size:0.75rem !important;
+}
+.green{
+	color: green;
+}
+.red{
+	color: red;
+}
+.fm-modal {
+    z-index: 10011; /** Because CKEditor image dialog was at 10010 */
+    width:80%;
+    height:80%;
+    top: 10%;
+    left:10%;
+    border:0;
+    position:fixed;
+    -moz-box-shadow: 0px 1px 5px 0px #656565;
+    -webkit-box-shadow: 0px 1px 5px 0px #656565;
+    -o-box-shadow: 0px 1px 5px 0px #656565;
+    box-shadow: 0px 1px 5px 0px #656565;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=5);
+}
+.ui-front {
+    z-index: 9999999 !important;
+}
+.bootstrap-dialog-header, .bootstrap-dialog-footer {
+	width: 100%;	
+}
+.dropdown-item:hover{
+	color:black !important;
+}
+.sporteqa-yellow {
+	color:#ffb342;
+}
+.bg-black {
+	background-color: #343a40;
+	padding: .25em;
+}
+.sc img {
+  height: calc(50vh - 100px);
+  width: auto;
+  margin: 0 auto; /* it centers any block level element */
+}
+.fa, .fab, .fal, .far, .fas {
+	margin-top:3px;
+}
+.clean-block .block-heading {
+	padding-top:40px !important;
+	padding-bottom: 40px !important;
+}
+.clean-block .block-heading p {
+	max-width:80% !important;
+}
+.clean-block  {
+	padding-bottom: 40px !important;
+}
+.card-body {
+	font-size: 0.7rem;
+}
+h5.card-title {
+	font-size: 1rem;
+}
+.page-footer {
+    font-size: .8rem;
+}
+.btn {
+	font-size:0.8rem !important;
+}
+form label {
+	font-weight: bold;
+}
+dd, h1, h2, h3, h4, h5, h6, label {
+    margin-top: .5rem !important;
+}
+.swal2-container
+{
+  z-index: 99999 !important;
+}
+body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) { overflow-y: visible !important; }
+html.swal2-shown,
+body.swal2-shown {
+  overflow-y: auto !important;
+}
+
+.animated {
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+}
+
+/*--*/
+.be-vietnam-pro-thin {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.be-vietnam-pro-extralight {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.be-vietnam-pro-light {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.be-vietnam-pro-regular {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.be-vietnam-pro-medium {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.be-vietnam-pro-semibold {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.be-vietnam-pro-bold {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.be-vietnam-pro-extrabold {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.be-vietnam-pro-black {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.be-vietnam-pro-thin-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.be-vietnam-pro-extralight-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.be-vietnam-pro-light-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.be-vietnam-pro-regular-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.be-vietnam-pro-medium-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.be-vietnam-pro-semibold-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.be-vietnam-pro-bold-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.be-vietnam-pro-extrabold-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.be-vietnam-pro-black-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}

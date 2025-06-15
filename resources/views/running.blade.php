@@ -155,7 +155,7 @@
                         <div class="card-wrapper">
                             <div class="card-img">
                                 <a href="{{ url($event->slug ?? 'event/' . $event->id) }}">
-                                    <img src="{{ asset('storage/' . ltrim($event->image, '/')) }}" alt="{{ $event->title }}" title="{{ $event->title }}">
+                                    <img src="{{ asset('storage/' . ltrim($event->image, '/')) }}" alt="{{ $event->title }}">
                                 </a>
                             </div>
                             <div class="card-box">

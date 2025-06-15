@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AbstractParser.php" server="www.agriquip.net" local="131987492440000000" remote="132069247800000000" Dst="0" />
+<file name="AbstractRestParser.php" server="www.agriquip.net" local="131987492440000000" remote="132069247800000000" Dst="0" />
+<file name="Crc32ValidatingParser.php" server="www.agriquip.net" local="131987492440000000" remote="132069247800000000" Dst="0" />
+<file name="DecodingEventStreamIterator.php" server="www.agriquip.net" local="131987492440000000" remote="132069247800000000" Dst="0" />
+<file name="EventParsingIterator.php" server="www.agriquip.net" local="131987492440000000" remote="132069247800000000" Dst="0" />
+<file name="JsonParser.php" server="www.agriquip.net" local="131987492440000000" remote="132069247800000000" Dst="0" />
+<file name="JsonRpcParser.php" server="www.agriquip.net" local="131987492440000000" remote="132069247800000000" Dst="0" />
+<file name="PayloadParserTrait.php" server="www.agriquip.net" local="131987492440000000" remote="132069247800000000" Dst="0" />
+<file name="QueryParser.php" server="www.agriquip.net" local="131987492440000000" remote="132069247800000000" Dst="0" />
+<file name="RestJsonParser.php" server="www.agriquip.net" local="131987492440000000" remote="132069247800000000" Dst="0" />
+<file name="RestXmlParser.php" server="www.agriquip.net" local="131987492440000000" remote="132069247800000000" Dst="0" />
+<file name="XmlParser.php" server="www.agriquip.net" local="131987492440000000" remote="132069247800000000" Dst="0" />
+</dwsync>

@@ -34,8 +34,15 @@
                                 <select id="field-type" class="form-select">
                                     <option value="text">Text</option>
                                     <option value="textarea">Textarea</option>
-                                    <option value="dropdown">Dropdown</option>
+                                    <option value="select">Dropdown</option>
                                     <option value="checkbox">Checkbox</option>
+                                    <option value="radio">Radio</option>
+                                    <option value="radio_price">Radio with Price</option>
+                                    <option value="radio_qty">Radio with Quantity</option>
+                                    <option value="datepicker">Datepicker</option>
+                                    <option value="image">Image Upload</option>
+                                    <option value="list_country">Country List</option>
+                                    <option value="list_state">State List</option>
                                 </select>
                             </div>
                             <div class="col-md-2 d-flex align-items-end">
@@ -59,7 +66,7 @@
     </div>
 </div>
 
-<!-- ✅ JavaScript -->
+<!-- JavaScript -->
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     let formStructure = [];
@@ -69,12 +76,28 @@ document.addEventListener('DOMContentLoaded', function () {
         const label = prompt("Enter field label:");
         if (!label) return;
 
+        const input_id = prompt("Enter HTML input ID/name:", label.toLowerCase().replace(/\s+/g, '_'));
+        const placeholder = prompt("Enter placeholder (optional):");
+        const cssClass = prompt("Enter CSS class (optional):");
+        const popup_detail = prompt("Enter popup detail URL or leave blank:");
+        const js_cmd = prompt("JS function to run (optional):");
+        const js_event = prompt("JS event (e.g., onchange) (optional):");
         const required = confirm("Is this field required?");
-        const options = (type === "dropdown")
-            ? prompt("Enter options (comma-separated):").split(',').map(opt => opt.trim())
-            : [];
+        const inline = confirm("Should this field be inline?");
+        const checked = confirm("Should any option be pre-checked?");
 
-        formStructure.push({ type, label, required, options });
+        let options = [];
+        if (["select", "checkbox", "radio", "radio_price", "radio_qty"].includes(type)) {
+            const rawOptions = prompt("Enter options (label:value:price if applicable), comma-separated:");
+            if (rawOptions) {
+                options = rawOptions.split(',').map(opt => {
+                    const [label, value, price] = opt.split(':');
+                    return { label: label.trim(), value: value?.trim() ?? '', price: parseFloat(price ?? 0), checked };
+                });
+            }
+        }
+
+        formStructure.push({ type, label, input_id, placeholder, class: cssClass, popup_detail, js_cmd, js_event, required, inline, checked, options });
         updatePreview();
     }
 
@@ -83,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
         preview.innerHTML = "";
 
         formStructure.forEach((field, index) => {
-            const requiredMark = field.required ? `<span style="color:red">*</span>` : '';
+            const requiredMark = field.required ? `<span style=\"color:red\">*</span>` : '';
             preview.innerHTML += `
                 <div class="mb-2 p-2 border-bottom">
                     <strong>${field.label}</strong> (${field.type}) ${requiredMark}

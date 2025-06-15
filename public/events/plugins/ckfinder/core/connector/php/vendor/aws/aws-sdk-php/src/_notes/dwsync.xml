@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AwsClient.php" server="www.agriquip.net" local="131987492440000000" remote="132069247800000000" Dst="0" />
+<file name="AwsClientInterface.php" server="www.agriquip.net" local="131987492440000000" remote="132069247800000000" Dst="0" />
+<file name="AwsClientTrait.php" server="www.agriquip.net" local="131987492440000000" remote="132069247800000000" Dst="0" />
+<file name="CacheInterface.php" server="www.agriquip.net" local="131987492440000000" remote="132069247800000000" Dst="0" />
+<file name="ClientResolver.php" server="www.agriquip.net" local="131987492440000000" remote="132069247800000000" Dst="0" />
+<file name="Command.php" server="www.agriquip.net" local="131987492440000000" remote="132069247800000000" Dst="0" />
+<file name="CommandInterface.php" server="www.agriquip.net" local="131987492440000000" remote="132069247800000000" Dst="0" />
+<file name="CommandPool.php" server="www.agriquip.net" local="131987492440000000" remote="132069247800000000" Dst="0" />
+<file name="DoctrineCacheAdapter.php" server="www.agriquip.net" local="131987492440000000" remote="132069249000000000" Dst="0" />
+<file name="EndpointParameterMiddleware.php" server="www.agriquip.net" local="131987492440000000" remote="132069249600000000" Dst="0" />
+<file name="functions.php" server="www.agriquip.net" local="131987492440000000" remote="132069249600000000" Dst="0" />
+<file name="HandlerList.php" server="www.agriquip.net" local="131987492440000000" remote="132069249600000000" Dst="0" />
+<file name="HasDataTrait.php" server="www.agriquip.net" local="131987492440000000" remote="132069249600000000" Dst="0" />
+<file name="HashingStream.php" server="www.agriquip.net" local="131987492440000000" remote="132069249600000000" Dst="0" />
+<file name="HashInterface.php" server="www.agriquip.net" local="131987492440000000" remote="132069249600000000" Dst="0" />
+<file name="HasMonitoringEventsTrait.php" server="www.agriquip.net" local="131987492440000000" remote="132069249600000000" Dst="0" />
+<file name="History.php" server="www.agriquip.net" local="131987492440000000" remote="132069249600000000" Dst="0" />
+<file name="IdempotencyTokenMiddleware.php" server="www.agriquip.net" local="131987492440000000" remote="132069249600000000" Dst="0" />
+<file name="JsonCompiler.php" server="www.agriquip.net" local="131987492440000000" remote="132069249600000000" Dst="0" />
+<file name="LruArrayCache.php" server="www.agriquip.net" local="131987492440000000" remote="132069250200000000" Dst="0" />
+<file name="Middleware.php" server="www.agriquip.net" local="131987492440000000" remote="132069250200000000" Dst="0" />
+<file name="MonitoringEventsInterface.php" server="www.agriquip.net" local="131987492440000000" remote="132069250200000000" Dst="0" />
+<file name="MockHandler.php" server="www.agriquip.net" local="131987492440000000" remote="132069250200000000" Dst="0" />
+<file name="MultiRegionClient.php" server="www.agriquip.net" local="131987492440000000" remote="132069250200000000" Dst="0" />
+<file name="PhpHash.php" server="www.agriquip.net" local="131987492440000000" remote="132069250200000000" Dst="0" />
+<file name="PresignUrlMiddleware.php" server="www.agriquip.net" local="131987492440000000" remote="132069250200000000" Dst="0" />
+<file name="PsrCacheAdapter.php" server="www.agriquip.net" local="131987492440000000" remote="132069250200000000" Dst="0" />
+</dwsync>
